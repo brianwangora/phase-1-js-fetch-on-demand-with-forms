@@ -6,7 +6,7 @@ const init = () => {
 
         console.log(input.value);
 
-        fetch(`http://localhost:3000/movies/${input.value}`)
+        fetch(`http://localhost:3000/movies`)
         .then(response => response.json())
         .then(data => {
         const title = document.querySelector('section#movieDetails h4');
